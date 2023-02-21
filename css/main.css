@@ -398,6 +398,11 @@ FIRST FOOTER CONTENT
     background-color: #1e1e1e;
     text-align: center;
 }
+section.social_connect {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
 .social_heading,
 .social_info {
     display: block;
@@ -834,6 +839,7 @@ MEDIA QUERIES TABLET
     .social_heading {
         font-size: 33px;
         margin: 50px 0 0 0;
+
     }
 
     .social_info a {
