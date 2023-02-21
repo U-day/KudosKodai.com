@@ -33,6 +33,20 @@ p.desc-text{
     line-height: 35px;
     text-align: justify;
 }
+p.desc-text-x{
+    padding: 10px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    display: inline-block;
+}
+p.desc-text-y{
+    padding: 10px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    display: none;
+}
 .text-content.container {
     margin-top: 35px; /* UKR was 65px; */
     margin-bottom: -51px;
@@ -142,7 +156,7 @@ body, html {
     clear: both;
 }
 
-h1, h1x, h1y, h2, p, span, a {
+h1, h1-x, h1-y, h2, p, span, a {
     font-family: "museo-sans", helvetica, sans-serif;
     color: #2f2e2f;
     margin: 0;
@@ -349,7 +363,7 @@ h1 {
     margin: 0;
     display: inline-block;
 }
-h1x {
+h1-x {
     font-size: 28px;
     font-weight: 900;
     width: 225px;
@@ -359,7 +373,7 @@ h1x {
     margin: 0;
     display: inline-block;
 }
-h1y {
+h1-y {
     font-size: 28px;
     font-weight: 900;
     width: 225px;
@@ -756,14 +770,14 @@ MEDIA QUERIES TABLET
         letter-spacing: 0.040em;
         border: 1px solid #2f2e2f;
     }
-    h1x {
+    h1-x {
         font-size: 32px;
         font-weight: 900;
         width: 280px;
         letter-spacing: 0.040em;
         border: 1px solid #2f2e2f;
     }
-    h1y {
+    h1-y {
         font-size: 32px;
         font-weight: 900;
         width: 280px;
@@ -804,7 +818,7 @@ MEDIA QUERIES TABLET
     .background_content h1 span {
         color: white;
         padding: 0;
-        border-bottom: 10px solid #fff;
+        border-bottom: 4px solid #fff;
     }
 
     /*========================
@@ -836,10 +850,16 @@ MEDIA QUERIES TABLET
         width: 325px;
     } 
     
-    h1x {
+    h1-x {
         display: none;
     }
-    h1y {
+    h1-y {
+        display: inline-block;
+    }
+    p.desc-text-x{
+        display: none;
+    }
+    p.desc-text-y{
         display: inline-block;
     }
 
@@ -942,11 +962,17 @@ MEDIA QUERIE DESKTOP
         font-size: 30px;
     }
     
-    h1x {
+    h1-x {
         display: none;
     }
-    h1y {
+    h1-y {
         display: inline-block;
     }
-
+    p.desc-text-x{
+        display: none;
+    }
+    p.desc-text-y{
+        display: inline-block;
+    }
+    
 }  /*END OF MEDIA QUERY*/
