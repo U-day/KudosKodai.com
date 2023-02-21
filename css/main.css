@@ -12,6 +12,7 @@ Text Domain: restaurant
 /*========================
 GLOBAL
 =========================*/
+/*
 h1 {
     font-size: 37px;
     font-weight: 900;
@@ -19,6 +20,7 @@ h1 {
     letter-spacing: 0.040em;
     border: 1px solid rgba(47, 46, 47, 0.59);
 }
+*/
 .scrolloff {
     pointer-events: none;
 }
@@ -140,7 +142,7 @@ body, html {
     clear: both;
 }
 
-h1, h2, p, span, a {
+h1, h1x, h1y, h2, p, span, a {
     font-family: "museo-sans", helvetica, sans-serif;
     color: #2f2e2f;
     margin: 0;
@@ -336,16 +338,39 @@ DESCRIPTION BODY CONTENT
     margin: 45px auto;
     max-width: 300px;
 }
+
 h1 {
     font-size: 28px;
     font-weight: 900;
     width: 225px;
     letter-spacing: 0.040em;
     border: 1px solid #2f2e2f;
-    display: inline-block;
     padding: 7px 16px;
     margin: 0;
+    display: inline-block;
 }
+h1x {
+    font-size: 28px;
+    font-weight: 900;
+    width: 225px;
+    letter-spacing: 0.040em;
+    border: 1px solid #2f2e2f;
+    padding: 7px 16px;
+    margin: 0;
+    display: inline-block;
+}
+h1y {
+    font-size: 28px;
+    font-weight: 900;
+    width: 225px;
+    letter-spacing: 0.040em;
+    border: 1px solid #2f2e2f;
+    padding: 7px 16px;
+    margin: 0;
+    display: none;
+}
+
+
 /*========================
 IMAGE DESCRIPTION BODY CONTENT
 =========================*/
@@ -618,17 +643,18 @@ MEDIA QUERIES MOBILE
         width: 80%;
         font-size: 2.5em;
     }
-
     .form-btn {
         margin: 0px auto;
         /* display: block; */
     }
 }
+
 /*========================
 MEDIA QUERIES TABLET
 =========================*/
 
-    @media (min-width: 400px) { 
+/*
+@media (min-width: 400px) { 
     .starter_container {
         height: 100%;
     }
@@ -636,12 +662,13 @@ MEDIA QUERIES TABLET
       top: 33%;
     }  
 }
+*/
 
 /*========================
 MEDIA QUERIES TABLET
 =========================*/
 
-    @media (min-width: 660px) { 
+@media (min-width: 660px) { 
   
         .starter_container {
             height: 100%;
@@ -729,6 +756,20 @@ MEDIA QUERIES TABLET
         letter-spacing: 0.040em;
         border: 1px solid #2f2e2f;
     }
+    h1x {
+        font-size: 32px;
+        font-weight: 900;
+        width: 280px;
+        letter-spacing: 0.040em;
+        border: 1px solid #2f2e2f;
+    }
+    h1y {
+        font-size: 32px;
+        font-weight: 900;
+        width: 280px;
+        letter-spacing: 0.040em;
+        border: 1px solid #2f2e2f;
+    }
     .picture_content {
         display: inline-block;
         padding: 0 20px;
@@ -765,7 +806,7 @@ MEDIA QUERIES TABLET
         padding: 0;
         border-bottom: 10px solid #fff;
     }
-}
+
     /*========================
     Social Connect
     =========================*/
@@ -774,7 +815,7 @@ MEDIA QUERIES TABLET
         background-color: black;
         text-align: center;
         margin-bottom: 50px;
-  }
+    }
 
     .social_heading {
         font-size: 33px;
@@ -794,6 +835,13 @@ MEDIA QUERIES TABLET
         margin: 0 auto;
         width: 325px;
     } 
+    
+    h1x {
+        display: none;
+    }
+    h1y {
+        display: inline-block;
+    }
 
 } /*END OF MEDIA QUERY*/
 
@@ -893,4 +941,12 @@ MEDIA QUERIE DESKTOP
     .social_icons li a {
         font-size: 30px;
     }
-}
+    
+    h1x {
+        display: none;
+    }
+    h1y {
+        display: inline-block;
+    }
+
+}  /*END OF MEDIA QUERY*/
