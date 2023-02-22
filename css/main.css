@@ -33,20 +33,13 @@ p.desc-text{
     line-height: 35px;
     text-align: justify;
 }
-p.desc-text-x{
-    padding: 10px;
-    font-size: 20px;
-    line-height: 35px;
-    text-align: justify;
+.is-mobile{
     display: inline-block;
 }
-p.desc-text-y{
-    padding: 10px;
-    font-size: 20px;
-    line-height: 35px;
-    text-align: justify;
+.is-web{
     display: none;
 }
+
 .text-content.container {
     margin-top: 35px; /* UKR was 65px; */
     margin-bottom: -51px;
@@ -117,7 +110,6 @@ p.desc-text-y{
 li.item{
     position: relative; 
     width: 100%; /* for IE 6 */
-
     background: rgba(211, 15, 34, 1);
 }
 
@@ -156,7 +148,7 @@ body, html {
     clear: both;
 }
 
-h1, h1-x, h1-y, h2, p, span, a {
+h1, h2, p, span, a {
     font-family: "museo-sans", helvetica, sans-serif;
     color: #2f2e2f;
     margin: 0;
@@ -203,13 +195,11 @@ div#bs-example-navbar-collapse-1 {
     text-decoration: none;
     color: brown !important;  /* UKR was white */
 }
-
 nav {
     background: #1E1E1E !important;
     font-size: 18px;
     color: white !important;
 }
-
 li{
     color: white !important;
     /*padding-left: 10px;*/
@@ -223,11 +213,12 @@ INTRO CONTAINER
     padding: 0;
     min-width: 100%;
     height: 100%;
-    background: url('../newjpg/banner/Kudos_Banner_1.jpg') no-repeat center center;
+    background: url('../newjpg/banner/Kudos_Banner_1.jpg') ;
     background-size: cover;
     text-align: center;
     background-position: center bottom;  
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .follow_container {
     width: 100%;
@@ -254,7 +245,6 @@ INTRO CONTAINER
     font-style: italic; 
     text-transform: capitalize;
 }
-
 .white{
     color: white;
 }
@@ -290,14 +280,6 @@ INTRO CONTAINER
     border-bottom: 8px solid #fff;
 }
 
-.dining.background_content{
-    background: url('../newjpg/banner/Kudos_Banner_6.jpg') no-repeat center center; 
-    background-size: cover;
-/*    background-position: 70% 50%;  UKR */
-    background-position: center bottom;
-    background-attachment: fixed;
-}
-
 /* UKR
 .bread.background_content{
     background: url('../images/bread.jpg') no-repeat center center; 
@@ -305,34 +287,40 @@ INTRO CONTAINER
     background-position: 70% 50%;
 }
 */
+.dining.background_content{
+    background: url('../newjpg/banner/Kudos_Banner_6.jpg') no-repeat center center; 
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
  .featured.background_content{
     background: url('../newjpg/banner/Kudos_Banner_4.jpg') no-repeat center center; 
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
     background-attachment: fixed;
 }
  .residence.background_content{
     background: url('../newjpg/banner/Kudos_Banner_7.jpg') no-repeat center center; 
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
     background-attachment: fixed;
 }
 .reservation.background_content{
     background: url('../newjpg/banner/Kudos_Banner_3.jpg') no-repeat center center; 
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
     background-attachment: fixed;
 }
 .activities.background_content{
     background: url('../newjpg/banner/Kudos_Banner_5.jpg') no-repeat center center; 
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
     background-attachment: fixed;
 }
 .wide.background_content{
     background: url('../newjpg/banner/Kudos_Banner_0.jpg') no-repeat center center; 
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
     background-attachment: fixed;
 }
 /*========================
@@ -363,27 +351,6 @@ h1 {
     margin: 0;
     display: inline-block;
 }
-h1-x {
-    font-size: 28px;
-    font-weight: 900;
-    width: 225px;
-    letter-spacing: 0.040em;
-    border: 1px solid #2f2e2f;
-    padding: 7px 16px;
-    margin: 0;
-    display: inline-block;
-}
-h1-y {
-    font-size: 28px;
-    font-weight: 900;
-    width: 225px;
-    letter-spacing: 0.040em;
-    border: 1px solid #2f2e2f;
-    padding: 7px 16px;
-    margin: 0;
-    display: none;
-}
-
 
 /*========================
 IMAGE DESCRIPTION BODY CONTENT
@@ -419,7 +386,6 @@ section.social_connect {
 .social_icons {
     margin: 18px 0 50px 0;
 }
-
 .social_info a {
     text-decoration: none;
     font-size: 16px;
@@ -431,21 +397,17 @@ section.social_connect {
     margin: 0 auto;
     width: 210px;
 }
-
 .social_info a:hover {
     color: #6c8f34;
 }
-
 .social_icons {
     padding: 0;
 }
-
 .social_icons li {
     list-style: none;
     display: inline-block;
     padding: none;
 }
-
 .social_icons li:nth-child(1),
 .social_icons li:nth-child(2),
 .social_icons li:nth-child(3) {
@@ -456,7 +418,6 @@ section.social_connect {
     text-decoration: none;
     font-size: 25px;
 }
-
 .social_icons li a:hover {
     color: #6c8f34;
 }
@@ -473,12 +434,10 @@ footer.sub_footer {
     background-color: #1C1C1C;
     padding: 20px;
 }
-
 p.sub-footer-text{
     color: #6B6B6B;
     padding: 5px;    /* UKR added spacing */
 }
-
 p.sub-footer-text a{
     color: #BDBDBD;
     text-decoration: none;
@@ -646,18 +605,16 @@ h1 {
 }
 
 /*========================
-MEDIA QUERIES MOBILE
+MEDIA QUERIES MOBILE <<<<<
 =========================*/
 
 @media (max-width: 660px) {
     .top-title {
         font-size: 67px;
     }
-
     .second-title {
         font-size: 21px;
     }
-
     .background_content h1 {
         width: 80%;
         font-size: 2.5em;
@@ -666,31 +623,64 @@ MEDIA QUERIES MOBILE
         margin: 0px auto;
         /* display: block; */
     }
+
+    .starter_container {
+        height: 100%;
+        background-attachment: scroll;
+    }
+    .dining.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+     .featured.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+     .residence.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .reservation.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .activities.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .wide.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    
+    .is-mobile{
+        display: none;
+    }
+    .is-web{
+        display: inline-block;
+    }
 }
 
 /*========================
-MEDIA QUERIES TABLET
+MEDIA QUERIES TABLET <<<<<
 =========================*/
 
-@media (min-width: 400px) { 
+/* @media (min-width: 400px) { 
     .starter_container {
         height: 100%;
     }
     .background_content h1 {
-      top: 33%;
+        top: 33%;
     }  
-}
-
+} */
 
 /*========================
-MEDIA QUERIES TABLET
+MEDIA QUERIES TABLET <<<<<
 =========================*/
-
 @media (min-width: 660px) { 
-  
-        .starter_container {
-            height: 100%;
-        }
+    .starter_container {
+        height: 100%;
+    }
 
     /*========================
     NAV
@@ -774,20 +764,6 @@ MEDIA QUERIES TABLET
         letter-spacing: 0.040em;
         border: 1px solid #2f2e2f;
     }
-    h1-x {
-        font-size: 32px;
-        font-weight: 900;
-        width: 280px;
-        letter-spacing: 0.040em;
-        border: 1px solid #2f2e2f;
-    }
-    h1-y {
-        font-size: 32px;
-        font-weight: 900;
-        width: 280px;
-        letter-spacing: 0.040em;
-        border: 1px solid #2f2e2f;
-    }
     .picture_content {
         display: inline-block;
         padding: 0 20px;
@@ -834,58 +810,76 @@ MEDIA QUERIES TABLET
         text-align: center;
         margin-bottom: 50px;
     }
-
     .social_heading {
         font-size: 33px;
         margin: 50px 0 0 0;
 
     }
-
     .social_info a {
         font-size: 24.93px;
     }
-
     .social_icons li a {
         font-size: 30px;
     }
-
     .social_info a {
         display: inline-block;
         margin: 0 auto;
         width: 325px;
     } 
+
+    .starter_container {
+        height: 100%;
+        background-attachment: scroll;
+    }
+    .dining.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+     .featured.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+     .residence.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .reservation.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .activities.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .wide.background_content{
+        background-size: cover;
+        background-attachment: scroll;
+    }
     
-    h1-x {
+    .is-mobile{
         display: none;
     }
-    h1-y {
-        display: inline-block;
-    }
-    p.desc-text-x{
-        display: none;
-    }
-    p.desc-text-y{
+    .is-web{
         display: inline-block;
     }
 
-} /*END OF MEDIA QUERY*/
+} /*END OF MEDIA QUERY TABLET*/
 
 /*========================
-MEDIA QUERIE DESKTOP
+MEDIA QUERIES DESKTOP <<<<<
 =========================*/
 
 @media (min-width: 1100px) { 
 
     .starter_container {
         background-attachment: fixed;
+        object-fit: contain;
     }
 
 
     /*========================
     BACKGROUND CONTENT
     =========================*/
-
-
     .background_content h1 {
         font-size: 5em;
         position: relative;
@@ -907,7 +901,6 @@ MEDIA QUERIE DESKTOP
     /*========================
     DESCRIPTION BODY CONTENT
     =========================*/
-
     .margin-right {
         margin-right: 5%;
     }
@@ -928,7 +921,6 @@ MEDIA QUERIE DESKTOP
         margin: 0;
         margin-top: 10px;
     }
-
 
     .picture_content {
         display: inline-block;
@@ -966,18 +958,7 @@ MEDIA QUERIE DESKTOP
     .social_icons li a {
         font-size: 30px;
     }
+
     
-    h1-x {
-        display: none;
-    }
-    h1-y {
-        display: inline-block;
-    }
-    p.desc-text-x{
-        display: none;
-    }
-    p.desc-text-y{
-        display: inline-block;
-    }
     
-}  /*END OF MEDIA QUERY*/
+}  /*END OF MEDIA QUERY DESKTOP */
