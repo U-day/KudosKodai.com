@@ -737,9 +737,6 @@ MEDIA QUERY MOBILE <<<<<
 MEDIA QUERY TABLET <<<<<
 =========================*/
 @media (min-width: 660px) {
-  .starter_container {
-    height: 100%;
-  }
 
   /*========================
     NAV
@@ -780,7 +777,7 @@ MEDIA QUERY TABLET <<<<<
   .main-nav li {
     display: inline-block;
     list-style: none;
-    margin: 0 29px 0 29px;
+    margin: 0 25px 0 25px;
   }
   .logo a,
   .main-nav a {
@@ -796,7 +793,7 @@ MEDIA QUERY TABLET <<<<<
   }
   .main-nav a:hover {
     color: #6c8f34;
-  }
+  } 
   .direction a {
     border: 5px solid rgba(0, 0, 0, 0);
     display: inline-block;
@@ -925,13 +922,7 @@ MEDIA QUERY TABLET <<<<<
 /*========================
 MEDIA QUERY DESKTOP <<<<<
 =========================*/
-@media (min-width: 800px) {
-  /* was 1100 */
-
-  .starter_container {
-    background-attachment: fixed;
-    object-fit: contain;
-  }
+@media (min-width: 800px) {  /* was 1100 */
 
   /*========================
     BACKGROUND CONTENT
