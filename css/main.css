@@ -882,6 +882,7 @@ MEDIA QUERY TABLET <<<<<
     width: 325px;
   }
 
+/* removed as parallax is blocked in browser   
   .starter_container {
     height: 100%;
     background-attachment: scroll;
@@ -909,7 +910,7 @@ MEDIA QUERY TABLET <<<<<
   .wide.background_content {
     background-size: cover;
     background-attachment: scroll;
-  }
+  } */
 
   .is-mobile {
     display: inline-block;
